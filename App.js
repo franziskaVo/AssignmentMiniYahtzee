@@ -17,7 +17,6 @@ const Tab = createBottomTabNavigator();
 export default function App() {
 
 
-
   return (
     <View style={Styles.container}>
       <NavigationContainer style={Styles.bottomContainer}>
