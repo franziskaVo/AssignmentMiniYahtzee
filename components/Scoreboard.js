@@ -7,6 +7,7 @@ import { FontAwesome6 } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { MAX_NBR_OF_SCOREBOARD_ROWS, SCOREBOARD_KEY } from "../Constants";
 import { DataTable } from 'react-native-paper';
+import { moderateScale, verticalScale } from "../Metrics";
 
 
 export default Scoreboard = ({navigation}) => {
@@ -64,9 +65,6 @@ export default Scoreboard = ({navigation}) => {
         }
     };
 
-
-    
-
     return(
         <>
             <View style={Styles.scoreboard}>
@@ -82,22 +80,22 @@ export default Scoreboard = ({navigation}) => {
                 <Footer/>
                 </View>
             ) : (
-                <View style={Styles.scoreboardTable}>
+                <View style={Styles.scoreboard}>
                     <DataTable>
-                        <DataTable.Header>
+                        <DataTable.Header style={{width: moderateScale (480)}}>
                             <DataTable.Title>Player</DataTable.Title>
                             <DataTable.Title>Date Time</DataTable.Title>
                             <DataTable.Title>Points</DataTable.Title>
                         </DataTable.Header>
                         {highScores.slice(0, MAX_NBR_OF_SCOREBOARD_ROWS).map((scoreData, i) => (
-                        <DataTable.Row key={i}>
+                        <DataTable.Row style={{width: moderateScale (480)}} key={i}>
                         <DataTable.Cell>{i+1}.{scoreData.player}</DataTable.Cell>
                         <DataTable.Cell>{scoreData.date}</DataTable.Cell>
                         <DataTable.Cell>{scoreData.score}</DataTable.Cell>
                         </DataTable.Row>
                     ))}
                     </DataTable>
-                    <Pressable style={Styles.okButton} onPress={clearScoreboard}>
+                    <Pressable style={Styles.clearButton} onPress={clearScoreboard}>
                      <Text style={Styles.scoreButtonText}>CLEAR SCOREBOARD</Text>
                  </Pressable>
                  <Footer />
@@ -106,3 +104,5 @@ export default Scoreboard = ({navigation}) => {
         </>
     );
 }
+
+// added moderateScale (480) to DataTable Header and DataTable Row, now date and time is completely visable 

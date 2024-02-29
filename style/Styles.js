@@ -12,7 +12,6 @@ export default StyleSheet.create ({
         alignItems: 'center',
         alignContent: 'center',
         flexDirection: "column",
-        //textAlign: 'center',
         backgroundColor: '#f5cac3',
     },
 
@@ -22,7 +21,6 @@ export default StyleSheet.create ({
         marginTop: verticalScale(20),
         marginBottom: verticalScale(20),
         justifyContent:'center',
-        //fontFamily:'Futura',
         fontFamily:'Roboto',
         fontSize: moderateScale(18),
     },
@@ -33,7 +31,6 @@ export default StyleSheet.create ({
         color:'#ffffff',
         fontWeight: 'bold',
         fontSize: moderateScale(25),
-        //fontFamily:'Futura',
         fontFamily:'Roboto',
     },
 
@@ -52,13 +49,10 @@ export default StyleSheet.create ({
         fontSize: moderateScale(23),
         textAlign: 'center',
         margin: moderateScale(10),
-        //fontFamily:'Trebuchet MS',
         fontFamily:'monospace'
     },
 
     footer: {
-        //flex: 1,
-        //height: 50,
         marginTop: verticalScale(20),
         backgroundColor: '#f28482',
         flexDirection: 'row'
@@ -70,7 +64,6 @@ export default StyleSheet.create ({
         fontSize: moderateScale(15),
         textAlign: 'center',
         margin: moderateScale(10),
-        //fontFamily:'Trebuchet MS'
         fontFamily:'monospace'
     },
 
@@ -88,7 +81,6 @@ export default StyleSheet.create ({
     okButtonText: {
         color:"#ffffff",
         fontSize: moderateScale(20),
-        //fontFamily:'Futura'
         fontFamily:'sans-serif-medium',
     },
 
@@ -105,7 +97,6 @@ export default StyleSheet.create ({
         fontWeight: 'bold',
         marginBottom: moderateScale(5),
         marginTop: moderateScale(10),
-        //fontFamily:'Futura'
         fontFamily:'Roboto',
     },
 
@@ -116,7 +107,6 @@ export default StyleSheet.create ({
         lineHeight: moderateScale(15),
         marginTop: moderateScale(10),
         marginBottom: moderateScale(5),
-        //fontFamily:'Futura'
         fontFamily:'Roboto',
     },
 
@@ -126,7 +116,6 @@ export default StyleSheet.create ({
         fontSize: moderateScale(25),
         marginTop: moderateScale(5),
         marginBottom: moderateScale(5),
-        //fontFamily:'Futura'
         fontFamily:'Roboto',
     },
 
@@ -144,7 +133,6 @@ export default StyleSheet.create ({
     playButtonText: {
         color:"#ffffff",
         fontSize: moderateScale(20),
-        //fontFamily:'Futura'
         fontFamily:'sans-serif-medium',
     },
 
@@ -183,19 +171,18 @@ export default StyleSheet.create ({
     },
 
     scoreTitle:{
-        fontFamily: '',
         fontSize: moderateScale(30),
         fontWeight: 'bold',
         color:'#ffffff',
         marginBottom: moderateScale(5),
         marginTop: moderateScale(20),
-        //fontFamily:'Futura'
         fontFamily:'Roboto',
     },
 
     scoreInfoText:{
         fontSize: moderateScale(20),
-        //fontFamily:'Futura',
+        marginTop: moderateScale(20),
+        marginBottom: moderateScale(35),
         color:'#ffffff',
         fontFamily:'Roboto',
     },
@@ -206,11 +193,21 @@ export default StyleSheet.create ({
         
     },
 
+    clearButton: {
+        flexDirection: "row",
+        padding: moderateScale(10),
+        backgroundColor: "#8b819b",
+        width: moderateScale(160),
+        borderRadius: moderateScale(15),
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center'
+    },
+
     scoreButtonText: {
         textAlign:'center',
         color:"#ffffff",
-        fontSize: moderateScale(20),
-        //fontFamily:'Futura'
+        fontSize: moderateScale(18),
         fontFamily:'sans-serif-medium'
     },
 
@@ -221,7 +218,6 @@ export default StyleSheet.create ({
         fontSize: moderateScale(20),
         marginTop: moderateScale(10),
         color:"#ffffff",
-        //fontFamily:'Futura'
         fontFamily:'Roboto',
       },
     
@@ -243,7 +239,6 @@ export default StyleSheet.create ({
     throwButtonText: {
         color:"#ffffff",
         fontSize: moderateScale(20),
-        //fontFamily:'Futura'
         fontFamily:'sans-serif-medium',
     },
 
